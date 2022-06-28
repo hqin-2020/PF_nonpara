@@ -1,10 +1,10 @@
 #!/bin/bash
 
 #SBATCH --account=pi-lhansen
-#SBATCH --job-name=pf806
-#SBATCH --output=pf806.out
-#SBATCH --error=pf806.err
-#SBATCH --time=0-20:00:00
+#SBATCH --job-name=pf207dd
+#SBATCH --output=pf207dd.out
+#SBATCH --error=pf207dd.err
+#SBATCH --time=0-23:00:00
 #SBATCH --partition=standard
 #SBATCH --cpus-per-task=1
 #SBATCH --mem=32G
@@ -12,4 +12,4 @@
 # Load Python modules
 module load python/booth/3.8/3.8.5
 
-srun python3 Run_Aso1_0_Non_parallel806.py 
+srun python3 Run_Aso1_0_Non_parallel207dd.py 

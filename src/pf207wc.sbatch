@@ -4,7 +4,7 @@
 #SBATCH --job-name=pf207wc
 #SBATCH --output=pf207wc.out
 #SBATCH --error=pf207wc.err
-#SBATCH --time=0-8:00:00
+#SBATCH --time=0-23:00:00
 #SBATCH --partition=standard
 #SBATCH --cpus-per-task=1
 #SBATCH --mem=32G

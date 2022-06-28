@@ -1,10 +1,10 @@
 #!/bin/bash
 
 #SBATCH --account=pi-lhansen
-#SBATCH --job-name=pf307lt
-#SBATCH --output=pf307lt.out
-#SBATCH --error=pf307lt.err
-#SBATCH --time=0-12:00:00
+#SBATCH --job-name=pf208lt
+#SBATCH --output=pf208lt.out
+#SBATCH --error=pf208lt.err
+#SBATCH --time=0-23:00:00
 #SBATCH --partition=standard
 #SBATCH --cpus-per-task=1
 #SBATCH --mem=32G
@@ -12,4 +12,4 @@
 # Load Python modules
 module load python/booth/3.8/3.8.5
 
-srun python3 Run_Aso1_0_Non_parallel307lt.py 
+srun python3 Run_Aso1_0_Non_parallel208lt.py 

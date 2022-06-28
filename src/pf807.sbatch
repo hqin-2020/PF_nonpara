@@ -4,7 +4,7 @@
 #SBATCH --job-name=pf807
 #SBATCH --output=pf807.out
 #SBATCH --error=pf807.err
-#SBATCH --time=0-20:00:00
+#SBATCH --time=1-20:00:00
 #SBATCH --partition=standard
 #SBATCH --cpus-per-task=1
 #SBATCH --mem=32G

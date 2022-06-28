@@ -8,20 +8,20 @@ from tqdm import tqdm
 import pickle
 import os
 
-from PF_Aso1_0_non_parallel_wcd import *
+from PF_Aso1_0_non_parallel_lt import *
 
 workdir = os.path.dirname(os.getcwd())
 srcdir = os.getcwd()
 datadir = workdir + '/data/'
 outputdir = workdir + '/output/'
 
-seed = 7
+seed = 9
 
 obs_series = pd.read_csv(datadir + 'data.csv', delimiter=',')
 obs_series = np.array(obs_series.iloc[:,1:]).T
 
 T = obs_series.shape[1]
-N = 30000
+N = 20000
 Λ_scale = 1
 cd_scale = 1
 np.random.seed(seed)
@@ -106,7 +106,7 @@ for t in tqdm(range(T-1)):
     X_series.append(Xt_particle)
     w_series.append(w)
 
-case = 'actual data wcd, seed = ' + str(seed) + ', T = ' + str(T) + ', N = ' + str(N) + ', Λ_scale = ' + str(Λ_scale) + ', cd_scale = ' + str(cd_scale)
+case = 'actual data lt, seed = ' + str(seed) + ', T = ' + str(T) + ', N = ' + str(N) + ', Λ_scale = ' + str(Λ_scale) + ', cd_scale = ' + str(cd_scale)
 try: 
     casedir = outputdir + case  + '/'
     os.mkdir(casedir)
