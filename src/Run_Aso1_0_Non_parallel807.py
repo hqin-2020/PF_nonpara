@@ -21,7 +21,7 @@ obs_series = pd.read_csv(datadir + 'data.csv', delimiter=',')
 obs_series = np.array(obs_series.iloc[:,1:]).T
 
 T = obs_series.shape[1]
-N = 100000
+N = 80000
 Λ_scale = 1
 cd_scale = 1
 np.random.seed(seed)
