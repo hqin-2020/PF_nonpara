@@ -12,4 +12,4 @@
 # Load Python modules
 module load python/booth/3.8/3.8.5
 
-python Run_Aso1_0_Non_parallel807.py 
+srun python3 Run_Aso1_0_Non_parallel807.py 
