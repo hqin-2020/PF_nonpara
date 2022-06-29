@@ -5,9 +5,9 @@
 #SBATCH --output=pf807.out
 #SBATCH --error=pf807.err
 #SBATCH --time=1-20:00:00
-#SBATCH --partition=standard
+#SBATCH --partition=highmem
 #SBATCH --cpus-per-task=1
-#SBATCH --mem=32G
+#SBATCH --mem=512G
 
 # Load Python modules
 module load python/booth/3.8/3.8.5
